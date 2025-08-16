@@ -17,10 +17,12 @@ contract CounterTest is Test {
         counter.increment();
         assertEq(counter.number(), 2);
     }
+
     function test_DecrementUnderFlow() public {
         vm.expectRevert(stdError.arithmeticError);
         counter.decrement();
     }
+
     function test_Decrement() public {
         counter.increment();
         counter.decrement();
