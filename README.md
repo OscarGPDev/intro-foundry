@@ -13,6 +13,13 @@ Foundry consists of:
 
 https://book.getfoundry.sh/
 
+## Dependencies
+This project uses solmate and openzeppelin libraries. To install them run:
+```shell
+$ forge install rari-capital/solmate
+$ npm install @openzeppelin/contracts
+```
+
 ## Usage
 
 ### Build
