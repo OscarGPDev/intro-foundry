@@ -64,3 +64,14 @@ $ forge --help
 $ anvil --help
 $ cast --help
 ```
+### Own notes
+Test specific contract:
+```shell
+$ forge test --match-path test/Contract.t.sol --gas-report
+```
+Libraries handling
+```shell
+$ forge install rari-capital/solmate
+$ forge update lib/solmate
+$ forge remove solmate
+```
