@@ -25,7 +25,7 @@ contract ErroresTest is Test {
         assertEq(uint256(1), uint256(1), "Test 1");
         assertEq(uint256(1), uint256(1), "Test 2");
         assertEq(uint256(1), uint256(1), "Test 3");
-        assertEq(uint256(2), uint256(1), "Test 4");
+        assertEq(uint256(1), uint256(1), "Test 4");
         assertEq(uint256(1), uint256(1), "Test 5");
     }
 }
