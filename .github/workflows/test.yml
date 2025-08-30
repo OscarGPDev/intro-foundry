@@ -45,7 +45,7 @@ jobs:
 
       - name: Run Forge tests
         env: 
-          KEY: ${{ secrets.key }}
+          KEY: ${{ secrets.KEY }}
         run: |
           forge test --fork-url https://eth-mainnet.g.alchemy.com/v2/${{ env.KEY }} -vvv
         id: test
