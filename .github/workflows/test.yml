@@ -12,6 +12,7 @@ jobs:
   check:
     name: Foundry project
     runs-on: ubuntu-latest
+    environment: envi
     steps:
       - uses: actions/checkout@v4
         with:
