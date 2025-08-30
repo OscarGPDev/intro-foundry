@@ -18,8 +18,8 @@ contract UserCRUD {
 
     function createUser(string calldata name, uint256 age) public {
         users[currentId] = User(currentId, name, age, true);
-        currentId++;
         emit UserCreated(currentId, name, age);
+        currentId++;
     }
 
     function readUser(uint256 id) public view returns (User memory) {
