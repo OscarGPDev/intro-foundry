@@ -58,7 +58,7 @@ contract YulExamples {
         }
     }
 
-    address owner = address(0);
+    address public owner = address(0);
 
     function updateOwner(address _newOwner) public {
         owner = _newOwner;
